@@ -1,16 +1,14 @@
 import React from 'react';
-import { Mail } from 'lucide-react';
-import { Instagram, Twitter, Linkedin, Dribbble, Globe } from 'lucide-react';
+import {Github, Mail} from 'lucide-react';
+import { Twitter, Linkedin, Globe } from 'lucide-react';
 
 
 const Portfolio = () => {
     const socialLinks = [
-        { icon: <Instagram className="w-6 h-6" />, href: "#", label: "Instagram" },
-        { icon: <Twitter className="w-6 h-6" />, href: "#", label: "Twitter" },
-        { icon: <Linkedin className="w-6 h-6" />, href: "#", label: "LinkedIn" },
-        { icon: <Dribbble className="w-6 h-6" />, href: "#", label: "Dribbble" },
-        { icon: <Globe className="w-6 h-6" />, href: "#", label: "Behance" },
-        { icon: <Globe className="w-6 h-6" />, href: "#", label: "Portfolio" },
+        { icon: <Github className="w-6 h-6" />, href: "https://github.com/jyotijauhari", label: "Github" },
+        { icon: <Linkedin className="w-6 h-6" />, href: "https://www.linkedin.com/feed/", label: "LinkedIn" },
+        { icon: <Twitter className="w-6 h-6" />, href: "https://x.com/techyexito", label: "Twitter" },
+        { icon: <Globe className="w-6 h-6" />, href: "https://techyexito.medium.com/", label: "Blogs" },
     ];
     return (
         <div className="min-h-screen bg-white">
@@ -24,10 +22,13 @@ const Portfolio = () => {
                         <a href="#home" className="text-gray-800 hover:text-gray-600">Home</a>
                         <a href="#skills" className="text-gray-800 hover:text-gray-600">Skills</a>
                         <a href="#contact" className="text-gray-800 hover:text-gray-600">Contact Me</a>
-                        <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-50">
-                            <Mail size={16} />
-                            <span>Mail</span>
-                        </button>
+                        <a href="mailto:jyotijauhari222@example.com">
+                            <button
+                                className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-50">
+                                <Mail size={16}/>
+                                <span>Mail</span>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -93,9 +94,10 @@ const Portfolio = () => {
                                 <div className="w-8 h-8 rounded-full bg-[#CCF0FF]"></div>
                             </div>
                             <p className="font-mono text-gray-700">
-                                Mostly working on Applications<br />
-                                Backend, designing REST API's,<br />
-                                sometimes doing frontend code
+                                Mostly working on Backend development,<br/>
+                                designing REST API's, Refactoring code,<br/>
+                                Database migrations, and sometimes<br/>
+                                found doing frontend stuff. <br/>
                             </p>
                         </div>
 
@@ -109,16 +111,17 @@ const Portfolio = () => {
                                 <div className="w-8 h-8 rounded-full bg-[#CCF0FF]"></div>
                             </div>
                             <p className="font-mono text-gray-700">
-                                Experience working on Azure cloud,<br />
-                                setting up CI-CD with Azure devops<br />
-                                and Kubernetes.
+                                Expertise in Azure Cloud solutions, <br/>
+                                including CI/CD pipelines with Azure DevOps, <br/>
+                                Kubernetes (AKS), and Azure Functions to deliver <br/>
+                                scalable, high-performance applications.
                             </p>
                         </div>
                     </div>
 
                     {/* Blog Writing Note */}
                     <p className="text-gray-500 text-center mt-24 font-mono">
-                        And I write blogs and poetry sometimes :P
+                        And I write blogs sometimes, find them <b><u><a href="https://techyexito.medium.com/">here</a></u></b> :P
                     </p>
                 </div>
             </section>
@@ -192,8 +195,10 @@ const Portfolio = () => {
 
                     <div className="space-y-4 mb-12">
                         <p className="text-lg text-gray-800">
-                            I say yes to interesting stuff. If you got something interesting to discuss or you are offering me an opportunity
-                            or you have a question or if you just want to say 'hi', just ping me.
+                            I say yes to interesting stuff. If you got something interesting to discuss
+                            or you are offering me an opportunity or you have a question or
+                            if you just want to say 'hi', just ping me on twitter or mail. I love tech discussion
+                            especially related to architecture.<br/>
                         </p>
 
                         <p className="text-lg text-gray-800">
